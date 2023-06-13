@@ -1,3 +1,4 @@
 .venv
 openAiApiKey.txt
-saplogonLoginDetails.txt
+dev_rfc.log
+saplogonLoginDetails.json
