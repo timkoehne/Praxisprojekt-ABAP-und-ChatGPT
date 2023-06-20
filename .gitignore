@@ -2,3 +2,9 @@
 openAiApiKey.txt
 dev_rfc.log
 saplogonLoginDetails.json
+saplogonLoginDetails - old.json
+prompts/
+only prompts/
+translated prompts/
+translated prompts.json
+*.pyc
