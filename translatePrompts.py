@@ -17,12 +17,16 @@ def writePromptsToFiles(prompts):
     
 def translatePrompts(): 
     files = os.listdir("only prompts/")
+    alreadyTranslated = os.listdir("translated prompts/")
     for file in files:
+        if file in alreadyTranslated:
+            continue
         with open("only prompts/"+file, "r", encoding="utf-8") as readfile:
             prompt = readfile.read()
             # translation = translator.translate(prompt, dest='de', src='en').text
             translation = chatgpt.askWithoutContext(prompt)
-            print("\"" + prompt + "\" translated is \"" + translation + "\"")
+            print("translating " + file)
+            # print("\"" + prompt + "\" translated is \"" + translation + "\"")
             with open("translated prompts/"+ file, "w", encoding="utf-8") as writefile:
                 writefile.write(translation)
                 
