@@ -51,6 +51,9 @@ def saveModifiedJson(humaneval):
 # translator = Translator()
 chatgpt = ChatGPT("translate to german")
 humaneval = readHumanEval()
+for (index, entry) in enumerate(humaneval):
+    with open("tests/"+str(index)+".txt", "w") as file:
+        file.write(entry["test"])
 
 ##run these each seperatly to manually edit / verify the prompts between functions
 #writePromptsToFiles([ x["prompt"] for x in humaneval ])
