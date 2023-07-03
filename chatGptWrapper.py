@@ -1,9 +1,10 @@
 import openai
 
 class ChatGPT:
-    def __init__(self, systemMessage="") -> None:
+    def __init__(self, systemMessage="", temperature=0.8) -> None:
         self.context = []
         self.systemMessage = systemMessage
+        self.temperature = temperature
         with open("openAiApiKey.txt", "r") as file:
             apiKey = file.read()
             openai.api_key = apiKey
@@ -11,7 +12,7 @@ class ChatGPT:
     def _runQuery(self, messages):
         completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
-            temperature=0.0, # 0 to 2
+            temperature=self.temperature, # 0 to 2
             max_tokens = 2048,
             messages=messages
         )
@@ -24,7 +25,7 @@ class ChatGPT:
         messages.append({"role": "user", "content": userMessage})
 
         response = self._runQuery(messages)
-        return response
+        return str(response)
     
     def askWithContext(self, userMessage):
         messages = []
@@ -36,4 +37,4 @@ class ChatGPT:
         
         response = self._runQuery(messages)
         self.context.append({"role": "assistant", "content": response})
-        return response
+        return str(response)

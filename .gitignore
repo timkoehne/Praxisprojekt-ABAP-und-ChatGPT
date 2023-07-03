@@ -8,6 +8,7 @@ tests/
 prompts/
 only prompts/
 translated prompts/
+adjustedTests/
 answer.txt
 translated prompts.json
 *.pyc
