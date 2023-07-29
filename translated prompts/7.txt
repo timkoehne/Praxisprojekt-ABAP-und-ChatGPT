@@ -1,0 +1,1 @@
+Filtern Sie eine Eingabeliste von Zeichenfolgen nur für solche, die eine bestimmte Teilzeichenfolge enthalten.

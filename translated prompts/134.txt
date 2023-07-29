@@ -1,0 +1,2 @@
+Erstellen Sie eine Funktion, die True zurückgibt, wenn das letzte Zeichen eines gegebenen Strings ein alphabetisches Zeichen ist und nicht Teil eines Wortes ist, und False sonst.
+Hinweis: "Wort" ist eine Gruppe von Zeichen, die durch Leerzeichen getrennt sind.

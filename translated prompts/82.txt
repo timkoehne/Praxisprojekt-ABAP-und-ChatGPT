@@ -1,0 +1,1 @@
+Schreibe eine Funktion, die einen String entgegennimmt und true zurückgibt, wenn die Länge des Strings eine Primzahl ist, andernfalls false.

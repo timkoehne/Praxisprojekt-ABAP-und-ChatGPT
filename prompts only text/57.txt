@@ -1,0 +1,1 @@
+Return True is list elements are monotonically increasing or decreasing.

@@ -1,0 +1,1 @@
+Schreiben Sie eine Funktion, die eine Liste von Zeichenketten akzeptiert. Die Liste enthält verschiedene Wörter. Geben Sie das Wort mit der höchsten Anzahl von eindeutigen Zeichen zurück. Wenn mehrere Zeichenfolgen die maximale Anzahl von eindeutigen Zeichen haben, geben Sie diejenige zurück, die in der lexikographischen Reihenfolge zuerst kommt.

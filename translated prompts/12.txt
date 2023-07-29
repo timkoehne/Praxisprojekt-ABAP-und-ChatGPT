@@ -1,0 +1,1 @@
+Aus einer Liste von Zeichenketten die längste zurückgeben. Im Falle von mehreren Zeichenketten mit gleicher Länge die erste zurückgeben. Im Falle einer leeren Eingabeliste None zurückgeben.

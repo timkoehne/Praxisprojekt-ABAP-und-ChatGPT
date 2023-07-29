@@ -1,0 +1,1 @@
+Dir wird eine Zeichenkette von Wörtern gegeben und deine Aufgabe ist es, die Anzahl der Langeweilen zu zählen. Eine Langeweile ist ein Satz, der mit dem Wort "Ich" beginnt. Sätze werden durch '.', '?' oder '!' begrenzt.

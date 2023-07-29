@@ -1,0 +1,1 @@
+Erstellen Sie eine Funktion, die eine Zeichenkette als Eingabe erhält, die nur eckige Klammern enthält. Die Funktion sollte True zurückgeben, wenn und nur wenn es eine gültige Teilfolge von Klammern gibt, bei der mindestens eine Klammer in der Teilfolge verschachtelt ist.

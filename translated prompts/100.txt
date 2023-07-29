@@ -1,0 +1,6 @@
+Gegeben eine positive ganze Zahl n, müssen Sie einen Stapel von n Ebenen von Steinen machen.
+Die erste Ebene hat n Steine.
+Die Anzahl der Steine in der nächsten Ebene ist:
+- die nächste ungerade Zahl, wenn n ungerade ist.
+- die nächste gerade Zahl, wenn n gerade ist.
+Geben Sie die Anzahl der Steine in jeder Ebene in einer Liste zurück, wobei das Element an Index i die Anzahl der Steine in der Ebene (i+1) darstellt.

@@ -1,0 +1,1 @@
+Gegeben eine Zeichenkette von Wörtern, gib eine Liste von Wörtern zurück, die auf Leerzeichen aufgeteilt sind. Wenn keine Leerzeichen im Text vorhanden sind, solltest du auf Kommas ',' aufteilen. Wenn keine Kommas vorhanden sind, solltest du die Anzahl der Kleinbuchstaben mit ungerader Reihenfolge im Alphabet zurückgeben, ord('a') = 0, ord('b') = 1, ... ord('z') = 25.

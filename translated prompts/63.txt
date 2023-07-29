@@ -1,0 +1,6 @@
+Die FibFib-Zahlenfolge ist eine Folge ähnlich der Fibonacci-Folge, die wie folgt definiert ist:
+fibfib(0) == 0
+    fibfib(1) == 0
+    fibfib(2) == 1
+    fibfib(n) == fibfib(n-1) + fibfib(n-2) + fibfib(n-3).
+Bitte schreiben Sie eine Funktion, um das n-te Element der FibFib-Zahlenfolge effizient zu berechnen.

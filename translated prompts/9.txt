@@ -1,0 +1,1 @@
+Aus einer gegebenen Liste von ganzen Zahlen soll eine Liste der maximalen Elemente generiert werden, die bis zu einem bestimmten Moment in der Sequenz gefunden wurden.

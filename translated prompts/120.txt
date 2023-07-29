@@ -1,0 +1,6 @@
+Gegeben sei ein Array arr von ganzen Zahlen und eine positive ganze Zahl k. Gib eine sortierte Liste der Länge k zurück, die die k größten Zahlen in arr enthält.
+
+Hinweis:
+    1. Die Länge des Arrays wird im Bereich von [1, 1000] liegen.
+    2. Die Elemente im Array werden im Bereich von [-1000, 1000] liegen.
+    3. 0 <= k <= len(arr)

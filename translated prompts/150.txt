@@ -1,0 +1,1 @@
+Ein einfaches Programm, das den Wert von x zurückgeben sollte, wenn n eine Primzahl ist, und den Wert von y zurückgeben sollte, wenn nicht.

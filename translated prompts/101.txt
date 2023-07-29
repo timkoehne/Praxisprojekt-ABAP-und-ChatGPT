@@ -1,0 +1,1 @@
+Dir wird eine Zeichenkette von Wörtern gegeben, die durch Kommas oder Leerzeichen getrennt sind. Deine Aufgabe ist es, die Zeichenkette in Wörter aufzuteilen und ein Array der Wörter zurückzugeben.

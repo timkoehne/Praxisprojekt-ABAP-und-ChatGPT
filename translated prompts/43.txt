@@ -1,0 +1,2 @@
+pairs_sum_to_zero nimmt eine Liste von Ganzzahlen als Eingabe.
+Es gibt True zurück, wenn es zwei unterschiedliche Elemente in der Liste gibt, die zu Null addieren, und False sonst.

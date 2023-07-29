@@ -1,0 +1,1 @@
+Die Eingabe für diese Funktion ist ein String, der mehrere Gruppen von verschachtelten Klammern enthält. Dein Ziel ist es, diese Gruppen in separate Strings zu trennen und eine Liste davon zurückzugeben. Die separaten Gruppen sind ausgeglichen (jede öffnende Klammer ist ordnungsgemäß geschlossen) und nicht ineinander verschachtelt. Leerzeichen im Eingabestring werden ignoriert.

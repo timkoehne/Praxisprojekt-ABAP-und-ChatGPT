@@ -1,0 +1,5 @@
+Gibt eine verschlüsselte Zeichenkette zurück, indem Gruppen von drei Zeichen zyklisch durchlaufen werden.
+Teilt die Zeichenkette in Gruppen auf. Jede Gruppe hat eine Länge von 3.
+Zyklisiert die Elemente in jeder Gruppe, es sei denn, die Gruppe hat weniger als 3 Elemente.
+
+Nimmt als Eingabe eine Zeichenkette, die mit der Funktion encode_cyclic verschlüsselt wurde. Gibt die entschlüsselte Zeichenkette zurück.

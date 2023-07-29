@@ -1,0 +1,1 @@
+In dieser Kata musst du ein Array von nicht-negativen Ganzzahlen nach der Anzahl der Einsen in ihrer binären Darstellung in aufsteigender Reihenfolge sortieren. Bei gleicher Anzahl von Einsen wird nach dem Dezimalwert sortiert.

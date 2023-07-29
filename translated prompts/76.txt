@@ -1,0 +1,2 @@
+Deine Aufgabe ist es, eine Funktion zu schreiben, die true zurückgibt, wenn eine Zahl x eine einfache Potenz von n ist, und false in anderen Fällen.
+    x ist eine einfache Potenz von n, wenn n ** int = x.

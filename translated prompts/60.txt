@@ -1,0 +1,1 @@
+sum_to_n ist eine Funktion, die Zahlen von 1 bis n summiert.

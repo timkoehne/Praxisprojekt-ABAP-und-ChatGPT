@@ -1,0 +1,1 @@
+Überprüft, ob der gegebene String ein Palindrom ist.

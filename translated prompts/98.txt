@@ -1,0 +1,1 @@
+Gegeben eine Zeichenkette s, zähle die Anzahl der Großbuchstaben-Vokale an geraden Indizes.

@@ -1,0 +1,1 @@
+Gegeben eine nicht-leere Liste von ganzen Zahlen, gib die Summe aller ungeraden Elemente zurück, die sich an geraden Positionen befinden.

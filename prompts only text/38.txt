@@ -1,0 +1,5 @@
+returns encoded string by cycling groups of three characters.
+split string to groups. Each of length 3.
+cycle elements in each group. Unless group has fewer elements than 3.
+
+takes as input string encoded with encode_cyclic function. Returns decoded string.

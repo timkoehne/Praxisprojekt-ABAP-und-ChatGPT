@@ -1,0 +1,1 @@
+return True if every opening bracket has a corresponding closing bracket.

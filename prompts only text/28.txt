@@ -1,0 +1,1 @@
+Concatenate list of strings into a single string

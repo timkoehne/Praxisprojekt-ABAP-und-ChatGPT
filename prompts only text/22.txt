@@ -1,0 +1,1 @@
+Filter given list of any python values only for integers

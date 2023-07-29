@@ -1,0 +1,3 @@
+Du hast eine positive ganze Zahl n. Du musst ein Integer-Array a der Länge n erstellen.
+Für jedes i (1 ≤ i ≤ n) ist der Wert von a[i] = i * i - i + 1.
+Gib die Anzahl der Tripel (a[i], a[j], a[k]) von a zurück, bei denen i < j < k gilt und a[i] + a[j] + a[k] ein Vielfaches von 3 ist.

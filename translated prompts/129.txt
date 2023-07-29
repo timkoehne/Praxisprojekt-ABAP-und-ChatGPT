@@ -1,0 +1,8 @@
+Gegeben ist ein Gitter mit N Zeilen und N Spalten (N >= 2) und einer positiven ganzen Zahl k. Jede Zelle des Gitters enthält einen Wert. Jede ganze Zahl im Bereich [1, N * N] erscheint genau einmal auf den Zellen des Gitters.
+
+Sie müssen den kürzesten Pfad der Länge k im Gitter finden. Sie können von jeder Zelle aus starten und in jedem Schritt zu einer benachbarten Zelle gehen, d.h. Sie können zu Zellen gehen, die eine Kante mit Ihrer aktuellen Zelle teilen.
+Bitte beachten Sie, dass ein Pfad der Länge k bedeutet, dass genau k Zellen besucht werden (nicht unbedingt unterschiedliche).
+Sie dürfen das Gitter nicht verlassen.
+Ein Pfad A (der Länge k) gilt als kleiner als ein Pfad B (der Länge k), wenn nach Erstellung der geordneten Listen der Werte auf den Zellen, die A und B durchlaufen (nennen wir sie lst_A und lst_B), lst_A lexikographisch kleiner als lst_B ist, d.h. es gibt einen ganzzahligen Index i (1 <= i <= k), so dass lst_A[i] < lst_B[i] und für alle j (1 <= j < i) gilt lst_A[j] = lst_B[j].
+Es ist garantiert, dass die Antwort eindeutig ist.
+Geben Sie eine geordnete Liste der Werte auf den Zellen zurück, die der kürzeste Pfad durchläuft.

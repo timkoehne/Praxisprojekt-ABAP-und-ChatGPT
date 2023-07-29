@@ -1,0 +1,5 @@
+Gegeben sei ein Array von ganzen Zahlen. Sortiere die Zahlen, die zwischen 1 und 9 (einschließlich) liegen, in aufsteigender Reihenfolge, kehre das resultierende Array um und ersetze dann jede Ziffer durch ihren entsprechenden Namen von "Eins", "Zwei", "Drei", "Vier", "Fünf", "Sechs", "Sieben", "Acht", "Neun".
+
+Wenn das Array leer ist, gib ein leeres Array zurück.
+
+Wenn das Array eine ungewöhnliche Zahl enthält, ignoriere sie.

@@ -1,0 +1,1 @@
+Dir wird eine Liste von Einzahlungs- und Abhebungsvorgängen auf einem Bankkonto gegeben, das mit einem Nullsaldo beginnt. Deine Aufgabe ist es zu erkennen, ob zu irgendeinem Zeitpunkt das Guthaben des Kontos unter Null fällt, und an diesem Punkt sollte die Funktion True zurückgeben. Andernfalls sollte sie False zurückgeben.

@@ -1,0 +1,8 @@
+Gegeben sind zwei Listen: operator und operand. Die erste Liste enthält grundlegende Algebra-Operationen und die zweite Liste enthält ganze Zahlen. Verwenden Sie die beiden gegebenen Listen, um den algebraischen Ausdruck zu erstellen und geben Sie das Ergebnis dieser Auswertung zurück.
+
+Die grundlegenden Algebra-Operationen sind:
+Addition (+)
+Subtraktion (-)
+Multiplikation (*)
+Ganzzahlige Division (//)
+Potenzierung (**)

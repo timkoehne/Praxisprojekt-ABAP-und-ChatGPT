@@ -1,0 +1,4 @@
+Finde das kürzeste Palindrom, das mit einem gegebenen String beginnt.
+Die Algorithmus-Idee ist einfach:
+- Finde den längsten postfix des gegebenen Strings, der ein Palindrom ist.
+- Hänge an das Ende des Strings die Umkehrung des präfixierten Strings an, der vor dem palindromischen Suffix kommt.

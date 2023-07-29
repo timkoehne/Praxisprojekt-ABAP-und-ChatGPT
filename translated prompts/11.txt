@@ -1,0 +1,2 @@
+Die Eingabe sind zwei Zeichenketten a und b, die nur aus 1en und 0en bestehen.
+Führen Sie eine binäre XOR-Operation auf diesen Eingaben aus und geben Sie das Ergebnis ebenfalls als Zeichenkette zurück.

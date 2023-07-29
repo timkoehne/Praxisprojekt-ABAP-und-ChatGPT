@@ -1,0 +1,4 @@
+Sie erhalten eine Liste von zwei Zeichenketten, beide Zeichenketten bestehen nur aus öffnenden Klammern '(' oder schließenden Klammern ')'.
+Ihre Aufgabe ist es zu überprüfen, ob es möglich ist, die beiden Zeichenketten in irgendeiner Reihenfolge zu verketten, so dass die resultierende Zeichenkette gut ist.
+Eine Zeichenkette S gilt nur dann als gut, wenn alle Klammern in S ausgeglichen sind. Zum Beispiel ist die Zeichenkette '(())()' gut, während die Zeichenkette '())' es nicht ist.
+Geben Sie 'Ja' zurück, wenn es eine Möglichkeit gibt, eine gute Zeichenkette zu erstellen, und geben Sie andernfalls 'Nein' zurück.

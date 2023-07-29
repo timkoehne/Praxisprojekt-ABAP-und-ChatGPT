@@ -1,0 +1,5 @@
+Das brasilianische Fakultät wird definiert als:
+brasilianische_fakultät(n) = n! * (n-1)! * (n-2)! * ... * 1!
+wobei n > 0
+
+Die Funktion erhält eine Ganzzahl als Eingabe und sollte die spezielle Fakultät dieser Ganzzahl zurückgeben.

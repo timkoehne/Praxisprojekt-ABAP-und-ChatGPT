@@ -1,0 +1,1 @@
+Gib True zurück, wenn alle Zahlen in der Liste l unterhalb des Schwellenwerts t liegen.

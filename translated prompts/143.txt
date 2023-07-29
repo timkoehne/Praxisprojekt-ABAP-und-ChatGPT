@@ -1,0 +1,1 @@
+Dir wird ein String gegeben, der einen Satz repräsentiert. Der Satz enthält einige Wörter, die durch ein Leerzeichen getrennt sind. Du musst einen neuen String zurückgeben, der die Wörter aus dem ursprünglichen Satz enthält, deren Längen Primzahlen sind. Die Reihenfolge der Wörter im neuen String sollte dieselbe wie im Original sein.
