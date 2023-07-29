@@ -13,11 +13,14 @@ for fileName in files:
                 newContent.append(line)
                 newContent.append(" "*(indent+4) + "passed = 0")
                 newContent.append(" "*(indent+4) + "failed = 0")
+            elif "assert True" in line:
+                # remove assert True
+                pass
             elif "assert" in line:
                 newContent.append(" "*indent+"try:")
                 newContent.append(" "*4 + line)
                 newContent.append(" "*(indent+4) + "passed += 1")
-                newContent.append(" "*indent+"except AssertionError:")
+                newContent.append(" "*indent+"except (AssertionError, TypeError):")
                 newContent.append(" "*(indent+4) + "failed += 1")
             else:
                 newContent.append(line)
