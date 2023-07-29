@@ -1,4 +1,9 @@
+from time import sleep
 import openai
+import openai.error
+
+
+retryTime = 5
 
 class ChatGPT:
     def __init__(self, systemMessage="", temperature=0.8) -> None:
@@ -10,12 +15,25 @@ class ChatGPT:
             openai.api_key = apiKey
 
     def _runQuery(self, messages):
-        completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            temperature=self.temperature, # 0 to 2
-            max_tokens = 2048,
-            messages=messages
-        )
+        
+        attempts = 0
+        completion = ""
+        while completion == "" and attempts <= 10:
+            try:
+                completion = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo",
+                    temperature=self.temperature, # 0 to 2
+                    max_tokens = 2048,
+                    messages=messages)
+                    
+            except (openai.error.APIError, openai.error.ServiceUnavailableError) as e:
+                attempts += 1
+                print(e)
+                print(f"OpenAI APIError: trying again in {retryTime} seconds...")
+                sleep(retryTime)
+            
+            if attempts > 10:
+                return "OpenAI APIError"
         return completion.choices[0].message.content  # type: ignore
 
     def askWithoutContext(self, userMessage):
