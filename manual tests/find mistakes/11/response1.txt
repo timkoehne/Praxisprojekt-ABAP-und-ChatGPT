@@ -1,0 +1,47 @@
+The mistake in the provided ABAP code is in the use of the CONCATENATE statement inside the loop. Since the function is intended to perform an XOR operation on two input strings IV_A and IV_B, the CONCATENATE statement in the loop will append either '0' or '1' to the RV_RESULT variable in each iteration, leading to incorrect results.
+
+To fix this issue, you should use the assignment operator = instead of CONCATENATE to correctly perform the XOR operation and store the result in the RV_RESULT variable. Here's the corrected code:
+
+abap
+
+FUNCTION Z_STRING_XOR.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IV_A) TYPE  STRING
+*"     VALUE(IV_B) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(RV_RESULT) TYPE  STRING
+*"----------------------------------------------------------------------
+
+  DATA: lv_result TYPE string.
+
+  DATA: lv_length_a TYPE i,
+        lv_length_b TYPE i,
+        lv_index TYPE i.
+
+  lv_length_a = strlen( iv_a ).
+  lv_length_b = strlen( iv_b ).
+
+  IF lv_length_a <> lv_length_b.
+    MESSAGE 'Both input strings must have the same length.' TYPE 'E'.
+    RETURN.
+  ENDIF.
+
+  lv_result = ''.
+  lv_index = 0.
+
+  DO lv_length_a TIMES.
+    IF iv_a+lv_index(1) = iv_b+lv_index(1).
+      lv_result = lv_result && '0'.
+    ELSE.
+      lv_result = lv_result && '1'.
+    ENDIF.
+    lv_index = lv_index + 1.
+  ENDDO.
+
+  RV_RESULT = lv_result.
+
+ENDFUNCTION.
+
+Now, the code will correctly perform the XOR operation on the input strings and store the result in the RV_RESULT parameter.

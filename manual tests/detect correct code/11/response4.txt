@@ -1,0 +1,46 @@
+Yes, there is a syntax error in the given code. The issue lies with the CONCATENATE statement within the loop. The CONCATENATE statement requires the first two arguments to be variables or literals, but RV_RESULT is not a variable here; it is declared as a value parameter in the function's interface. To fix this, you can create a temporary variable to store the result and then assign it to RV_RESULT at the end of the function. Here's the corrected code:
+
+abap
+
+FUNCTION Z_STRING_XOR.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IV_A) TYPE  STRING
+*"     VALUE(IV_B) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(RV_RESULT) TYPE  STRING
+*"----------------------------------------------------------------------
+
+  DATA: lv_result TYPE string,
+        lv_temp_result TYPE string.
+
+  DATA: lv_length_a TYPE i,
+        lv_length_b TYPE i,
+        lv_index TYPE i.
+
+  lv_length_a = strlen( iv_a ).
+  lv_length_b = strlen( iv_b ).
+
+  IF lv_length_a <> lv_length_b.
+    MESSAGE 'Both input strings must have the same length.' TYPE 'E'.
+    RETURN.
+  ENDIF.
+
+  lv_index = 0.
+  lv_temp_result = ''.
+
+  DO lv_length_a TIMES.
+    IF iv_a+lv_index(1) = iv_b+lv_index(1).
+      CONCATENATE lv_temp_result '0' INTO lv_temp_result.
+    ELSE.
+      CONCATENATE lv_temp_result '1' INTO lv_temp_result.
+    ENDIF.
+    lv_index = lv_index + 1.
+  ENDDO.
+
+  RV_RESULT = lv_temp_result.
+
+ENDFUNCTION.
+
+With this correction, the function should now work correctly and XOR the two input strings, storing the result in RV_RESULT.

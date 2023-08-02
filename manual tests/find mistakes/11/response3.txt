@@ -1,0 +1,32 @@
+The main mistake in this code is that it checks if lv_length_a is equal to lv_length_b before performing the XOR operation. It should check if the lengths are not equal because the XOR operation is only applicable to strings of the same length. The code also has some issues with the XOR logic.
+
+To fix the code, you should replace the IF statement with the following:
+
+abap
+
+IF lv_length_a <> lv_length_b.
+  MESSAGE 'Both input strings must have the same length.' TYPE 'E'.
+  RETURN.
+ENDIF.
+
+Then, you need to fix the XOR logic inside the DO loop. Currently, it is comparing individual characters of the two input strings and appending '0' to RV_RESULT if they are equal and '1' if they are different. However, XOR should be performed on the binary representation of the characters, not on the characters themselves.
+
+To correctly perform XOR on the binary representation of the strings, you can use the following code:
+
+abap
+
+DO lv_length_a TIMES.
+  DATA(lv_char_a) TYPE c.
+  DATA(lv_char_b) TYPE c.
+  DATA(lv_xored_char) TYPE c.
+
+  lv_char_a = iv_a+lv_index(1).
+  lv_char_b = iv_b+lv_index(1).
+
+  lv_xored_char = lv_char_a XOR lv_char_b.
+  CONCATENATE rv_result lv_xored_char INTO rv_result.
+
+  lv_index = lv_index + 1.
+ENDDO.
+
+With these changes, the Z_STRING_XOR function should correctly perform the XOR operation on two input strings of the same length and return the result in RV_RESULT.

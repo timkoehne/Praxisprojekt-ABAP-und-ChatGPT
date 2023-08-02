@@ -1,0 +1,21 @@
+This ABAP code defines a function module named Z_ISCUBE. The purpose of this function is to determine if a given input number A is a perfect cube or not. A perfect cube is an integer that can be expressed as the cube of an integer.
+
+Here's a breakdown of the code:
+
+The function module has two interfaces:
+
+IMPORTING: It accepts a single input parameter A of type I (integer).
+EXPORTING: It returns a single output parameter RETURN_VALUE of type C (character, single character).
+Local variables:
+
+abs_a: Used to store the absolute value of the input parameter A.
+root_a: Used to store the cube root of abs_a.
+cube_a: Used to store the cube of root_a.
+Processing:
+
+The code first calculates the absolute value of the input A using the ABS function, storing it in the variable abs_a.
+It then calculates the cube root of abs_a using the expression abs_a ** (1 / 3) and stores it in root_a. The ** operator is used for exponentiation in ABAP.
+The variable cube_a is assigned the value of root_a raised to the power of 3, effectively calculating root_a ** 3.
+The code then checks if cube_a is equal to abs_a. If they are equal, it means that A is a perfect cube. In that case, the RETURN_VALUE is set to the character 'X'. Otherwise, RETURN_VALUE is set to a blank space (' ').
+
+In summary, this ABAP function takes an input number A, calculates its absolute value, then computes the cube root of the absolute value. Finally, it checks if the cube of the cube root is equal to the absolute value. If it is, the function returns 'X', indicating that A is a perfect cube; otherwise, it returns a blank space, indicating that A is not a perfect cube.

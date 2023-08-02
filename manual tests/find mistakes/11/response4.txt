@@ -1,0 +1,51 @@
+The mistake in this code is that it does not correctly compute the XOR of two strings. The XOR operation should be performed on the individual bits of the characters in the strings, but the current implementation is treating the strings as a whole and comparing them character by character.
+
+To fix this code, you need to perform the XOR operation on the individual characters in the input strings and then build the resulting string with the XORed bits. Here's the corrected code:
+
+abap
+
+FUNCTION Z_STRING_XOR.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IV_A) TYPE  STRING
+*"     VALUE(IV_B) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(RV_RESULT) TYPE  STRING
+*"----------------------------------------------------------------------
+
+  DATA: lv_result TYPE string.
+
+  DATA: lv_length_a TYPE i,
+        lv_length_b TYPE i,
+        lv_index TYPE i.
+
+  lv_length_a = strlen( iv_a ).
+  lv_length_b = strlen( iv_b ).
+
+  IF lv_length_a <> lv_length_b.
+    MESSAGE 'Both input strings must have the same length.' TYPE 'E'.
+    RETURN.
+  ENDIF.
+
+  lv_index = 0.
+  lv_result = ''.
+
+  DO lv_length_a TIMES.
+    DATA: lv_char_a TYPE c,
+          lv_char_b TYPE c,
+          lv_xor_result TYPE c.
+
+    lv_char_a = iv_a+lv_index(1).
+    lv_char_b = iv_b+lv_index(1).
+    lv_xor_result = lv_char_a BIT-XOR lv_char_b.
+    CONCATENATE lv_result lv_xor_result INTO lv_result.
+
+    lv_index = lv_index + 1.
+  ENDDO.
+
+  RV_RESULT = lv_result.
+
+ENDFUNCTION.
+
+With this corrected code, the function will now perform the XOR operation correctly on the individual characters of the input strings and return the XORed string in the RV_RESULT parameter.

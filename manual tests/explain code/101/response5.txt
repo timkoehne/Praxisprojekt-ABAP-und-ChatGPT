@@ -1,0 +1,36 @@
+This ABAP code defines a function module named "Z_WORDS_STRING" with two parameters: INPUT_STRING (importing) and OUTPUT_TABLE (exporting). Let's break down the code and understand what it does:
+
+Function Module Declaration:
+
+FUNCTION Z_WORDS_STRING.
+This line starts the definition of the ABAP function module named "Z_WORDS_STRING."
+
+Local Interface:
+
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(INPUT_STRING) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(OUTPUT_TABLE) TYPE  STRINGTAB
+*"----------------------------------------------------------------------
+The local interface section is a comment block that describes the parameters of the function module. In ABAP, the local interface defines the input and output parameters of the function module. In this case, the function module takes an input parameter INPUT_STRING of type STRING and returns an output parameter OUTPUT_TABLE of type STRINGTAB (a table of strings).
+
+IMPORTING parameter (INPUT_STRING): This parameter is used to pass a string value to the function module. The function module will split this input string into separate words based on the delimiter (',' in this case).
+
+EXPORTING parameter (OUTPUT_TABLE): This parameter is used to return the result of the function. It will contain the individual words extracted from the input string. The words are stored in a table of strings (STRINGTAB).
+
+Main Logic:
+
+SPLIT input_string AT ',' INTO TABLE output_table.
+The main logic of the function module is to split the input string (INPUT_STRING) into individual words based on the delimiter ','. The words are then stored in the table (OUTPUT_TABLE).
+
+The SPLIT statement is an ABAP string function that is used to divide a string into smaller parts (substrings) based on a specified delimiter. In this case, the delimiter is ','. The function will extract each word between the commas and populate the OUTPUT_TABLE with these words.
+
+Function Module End:
+
+ENDFUNCTION.
+This line marks the end of the function module "Z_WORDS_STRING."
+
+In summary, the ABAP function module "Z_WORDS_STRING" takes an input string and returns a table containing individual words extracted from the input string. The words are separated based on the comma ',' delimiter in the input string.
+

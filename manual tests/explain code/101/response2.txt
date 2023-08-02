@@ -1,0 +1,26 @@
+This ABAP code defines a function module called "Z_WORDS_STRING" that takes an input string and splits it into multiple words based on the comma (',') delimiter. The result of the split is returned as a table of strings.
+
+Here's a breakdown of the code:
+
+The code starts with a comment section that describes the purpose of the function and its local interface.
+
+The function module is declared with the name "Z_WORDS_STRING."
+
+The local interface section defines the parameters of the function:
+
+IMPORTING:
+
+"INPUT_STRING": This parameter is of type STRING and serves as the input for the function. It represents the original string that needs to be split.
+EXPORTING:
+
+"OUTPUT_TABLE": This parameter is of type STRINGTAB, which is a table of strings. It will contain the result of the split operation, where each element of the table represents a word extracted from the input string.
+The actual logic of the function is quite simple:
+
+The "SPLIT" statement is used to split the input_string at each comma (',') occurrence.
+The result of the split operation is stored in the output_table.
+The function module ends with the "ENDFUNCTION." statement, which marks the end of the function's code.
+
+To use this ABAP function, you can pass a comma-separated string to the "INPUT_STRING" parameter, and it will return a table of strings, where each element represents a word extracted from the input string based on the comma delimiter. For example:
+
+Input: "apple,banana,orange"
+Output Table: ["apple", "banana", "orange"]

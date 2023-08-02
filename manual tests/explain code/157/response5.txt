@@ -1,0 +1,27 @@
+This ABAP code defines a function module called z_right_angle_triangle. The purpose of this function is to determine if a triangle with sides A, B, and C is a right-angled triangle or not. A right-angled triangle is a triangle in which one of the angles is a right angle, which measures 90 degrees.
+
+Let's break down the code:
+
+The function module z_right_angle_triangle takes three input parameters:
+
+A: Side A of the triangle (integer type)
+B: Side B of the triangle (integer type)
+C: Side C of the triangle (integer type)
+It has one output parameter:
+
+RETURN_VALUE: A single character field (type C), which will be 'X' if the triangle is a right-angled triangle, and ' ' (blank) if it is not.
+The function module calculates the squares of each side of the triangle:
+
+square_a = a * a: The square of side A.
+square_b = b * b: The square of side B.
+square_c = c * c: The square of side C.
+return_value is initialized to a blank value.
+
+The function checks if any of the conditions for a right-angled triangle are met:
+
+It uses the Pythagorean theorem, which states that in a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.
+So, the function checks if any of the squares of the sides (square_a, square_b, or square_c) is equal to the sum of the squares of the other two sides.
+If any of these conditions are true, it sets return_value to 'X', indicating that the triangle is a right-angled triangle.
+The function module ends.
+
+When you call this function module and pass the values of A, B, and C as input parameters, it will return 'X' if the triangle is right-angled, and ' ' (blank) if it is not.

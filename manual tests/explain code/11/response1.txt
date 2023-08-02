@@ -1,0 +1,26 @@
+This ABAP function is called `Z_STRING_XOR`, and it performs a bitwise XOR operation on two input strings `IV_A` and `IV_B` of the same length. The function takes two input parameters (`IV_A` and `IV_B`) and returns the result of the XOR operation in the `RV_RESULT` parameter. Let's go through the code step by step:
+
+1. **Local Interface**:
+   The function has two input parameters `IV_A` and `IV_B`, both of type `STRING`, which are the two input strings for the XOR operation. It also has an output parameter `RV_RESULT`, which will hold the result of the XOR operation and is of type `STRING`.
+
+2. **Data Declarations**:
+   - `lv_result`: This is a local variable of type `STRING` that will be used to build the resulting XOR string.
+   - `lv_length_a`, `lv_length_b`: These are local variables of type `i` (integer) that will hold the lengths of input strings `IV_A` and `IV_B`, respectively.
+   - `lv_index`: This is a local variable of type `i` that is used to iterate through the input strings.
+
+3. **Length Calculation**:
+   The lengths of input strings `IV_A` and `IV_B` are calculated using `strlen()` function and stored in `lv_length_a` and `lv_length_b`, respectively.
+
+4. **Input Length Validation**:
+   The code checks if the lengths of `IV_A` and `IV_B` are the same. If they are not equal, it raises an error message using `MESSAGE` statement with type 'E' (Error) and stops the function execution using `RETURN`.
+
+5. **XOR Operation**:
+   The function performs the XOR operation character by character by iterating through the input strings. It uses a `DO` loop with `lv_length_a` iterations.
+
+6. **Character Comparison and Result Construction**:
+   Inside the loop, it compares the characters at the current index (`lv_index`) of `IV_A` and `IV_B`. If the characters are the same, it appends '0' to the result string `RV_RESULT` using `CONCATENATE`. If the characters are different, it appends '1' to `RV_RESULT`. This way, it builds the result string that represents the XOR of `IV_A` and `IV_B`.
+
+7. **End of Function**:
+   The function ends (`ENDFUNCTION`) after the loop finishes, and the final result of the XOR operation is stored in `RV_RESULT`, which will be returned to the caller.
+
+To use this function, you would call it with two input strings of the same length and receive the result in the `RV_RESULT` output parameter. The resulting string `RV_RESULT` will contain the binary representation of the XOR operation between `IV_A` and `IV_B`.

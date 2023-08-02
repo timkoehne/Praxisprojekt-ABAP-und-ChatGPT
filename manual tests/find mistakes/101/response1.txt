@@ -1,0 +1,22 @@
+In the provided code, there is a typographical error in the statement "SEPERATE input_string AT ',' INTO TABLE output_table."
+
+The correct keyword is "SPLIT," not "SEPERATE."
+
+The corrected code should be:
+
+abap
+
+FUNCTION Z_WORDS_STRING.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(INPUT_STRING) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(OUTPUT_TABLE) TYPE  STRINGTAB
+*"----------------------------------------------------------------------
+
+  SPLIT input_string AT ',' INTO TABLE output_table.
+
+ENDFUNCTION.
+
+In ABAP, the SPLIT keyword is used to separate a given input string into substrings based on a delimiter and stores the substrings in an internal table. The delimiter specified here is the comma (','), so the input string will be split into substrings wherever it encounters a comma. The resulting substrings will be stored in the internal table output_table.

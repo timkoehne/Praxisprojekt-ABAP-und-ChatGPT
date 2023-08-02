@@ -1,0 +1,18 @@
+Are there any syntax errors in the given code?:
+FUNCTION z_string_sequence.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(N) TYPE  I
+*"  EXPORTING
+*"     VALUE(RETURN_VALUE) TYPE  STRING
+*"----------------------------------------------------------------------
+
+data lv_str type string.
+
+  DO n + 1 TIMES.
+    lv_str = sy-index - 1.
+    CONCATENATE return_value lv_str INTO return_value.
+  ENDDO.
+
+ENDFUNCTION.

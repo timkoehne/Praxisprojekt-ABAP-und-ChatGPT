@@ -1,0 +1,22 @@
+In the provided code, the mistake is that the OUTPUT_TABLE parameter is defined as an exporting parameter but is not being assigned any value before the function ends. Since it's an exporting parameter, it should have a value assigned to it before the function is completed so that the calling program can access the result.
+
+To fix the code, you need to populate the OUTPUT_TABLE with the values of the TABLE variable before the function ends. Here's the corrected code:
+
+abap
+
+FUNCTION Z_WORDS_STRING.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(INPUT_STRING) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(OUTPUT_TABLE) TYPE  STRINGTAB
+*"----------------------------------------------------------------------
+
+  SPLIT input_string AT ',' INTO TABLE table.
+
+  OUTPUT_TABLE = table.
+
+ENDFUNCTION.
+
+With this modification, the OUTPUT_TABLE will now contain the words extracted from the INPUT_STRING, and it will be available for use in the calling program.

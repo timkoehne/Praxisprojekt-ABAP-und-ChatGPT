@@ -1,0 +1,18 @@
+The mistake in the given ABAP code is that the CONCATENATE statement inside the DO loop is not concatenating the characters properly, which will lead to incorrect results for the XOR operation.
+
+In ABAP, the CONCATENATE statement is used to concatenate strings. However, when using the CONCATENATE statement with single characters, you need to specify the length of the single character string (1 character) explicitly. Otherwise, it will take the entire length of the target string, leading to unexpected results.
+
+To fix this issue, you need to change the CONCATENATE statements inside the loop as follows:
+
+abap
+
+DO lv_length TIMES.
+  IF iv_a+lv_index(1) = iv_b+lv_index(1).
+    CONCATENATE rv_result '0' INTO rv_result.
+  ELSE.
+    CONCATENATE rv_result '1' INTO rv_result.
+  ENDIF.
+  lv_index = lv_index + 1.
+ENDDO.
+
+By explicitly specifying the length of the single character strings ('0' and '1') as 1, the XOR operation will work correctly, and the rv_result will contain the expected result string after the loop is executed.

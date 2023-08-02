@@ -1,0 +1,7 @@
+Based on the provided code snippet, there don't seem to be any obvious syntax errors. However, I noticed a few things you might want to consider:
+
+The FUNCTION statement lacks a closing period. Although this may not cause a syntax error, it is a good practice to include it for consistency and clarity.
+
+The asterisk (*) characters are used for comments, but they appear to be formatted inconsistently in the comment section. It is generally a good idea to keep the comments neat and well-organized for easier readability.
+
+Other than these points, the code should work as intended. However, it is essential to test the function thoroughly to ensure its correctness and functionality.
