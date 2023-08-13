@@ -5,12 +5,21 @@ saplogonLoginDetails.json
 saplogonLoginDetails - old.json
 saplogonLoginDetails - local.json
 tests/
-prompts/
-only prompts/
-translated prompts/
-adjustedTests/
 answer.txt
 translated prompts.json
 *.pyc
 prompts nochmal angucken.txt
 probleme mit den übersetzungen.txt
+backup
+test.py
+randomSmallTest.json
+somePassablePrompts.json
+allPrompts5Repeats*.json
+bigRun-*
+newSmallTest*.json
+runTest.json
+somePassablePrompts*.json
+combinedThreads.json
+bigRun.json
+adjusting*.json
+test.json
