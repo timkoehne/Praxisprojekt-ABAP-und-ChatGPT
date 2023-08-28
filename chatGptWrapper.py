@@ -6,10 +6,11 @@ import openai.error
 retryTime = 5
 
 class ChatGPT:
-    def __init__(self, systemMessage="", temperature=0.8) -> None:
+    def __init__(self, systemMessage="", temperature=0.8, model="gpt-3.5-turbo") -> None:
         self.context = []
         self.systemMessage = systemMessage
         self.temperature = temperature
+        self.model = model
         with open("openAiApiKey.txt", "r") as file:
             apiKey = file.read()
             openai.api_key = apiKey
@@ -21,7 +22,7 @@ class ChatGPT:
         while completion == "" and attempts <= 10:
             try:
                 completion = openai.ChatCompletion.create(
-                    model="gpt-3.5-turbo",
+                    model=self.model,
                     temperature=self.temperature, # 0 to 2
                     max_tokens = 2048,
                     messages=messages)
@@ -56,3 +57,10 @@ class ChatGPT:
         response = self._runQuery(messages)
         self.context.append({"role": "assistant", "content": response})
         return str(response)
+    
+    def listModels(self):
+        models = openai.Model.list()
+        if isinstance(models, dict):
+            return [i["id"] for i in models["data"]]
+        
+        
