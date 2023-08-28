@@ -1,1 +1,0 @@
-Gib True zurück, wenn die Elemente der Liste monoton steigend oder fallend sind.

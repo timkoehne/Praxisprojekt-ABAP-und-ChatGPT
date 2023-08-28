@@ -1,1 +1,0 @@
-Gib "true" zurück, wenn eine gegebene Zahl eine Primzahl ist, andernfalls gib "false" zurück.

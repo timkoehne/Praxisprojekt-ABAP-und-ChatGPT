@@ -1,1 +1,0 @@
-Gegeben eine positive ganze Zahl n, gib die Anzahl der n-stelligen positiven Zahlen zurück, die mit 1 beginnen oder mit 1 enden.

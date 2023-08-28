@@ -1,1 +1,0 @@
-Diese Funktion nimmt eine Liste l entgegen und gibt eine Liste l' zurück, die in den Indizes, die nicht durch drei teilbar sind, identisch mit l ist. Die Werte an den Indizes, die durch drei teilbar sind, sind jedoch gleich den Werten der entsprechenden Indizes von l, jedoch sortiert.

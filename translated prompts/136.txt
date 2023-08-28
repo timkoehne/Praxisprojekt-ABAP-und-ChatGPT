@@ -1,1 +1,0 @@
-Erstelle eine Funktion, die ein Tupel (a, b) zurückgibt, wobei 'a' die größte negative Zahl und 'b' die kleinste positive Zahl in einer Liste ist. Wenn es keine negativen oder positiven Zahlen gibt, gib sie als None zurück.

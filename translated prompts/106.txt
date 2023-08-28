@@ -1,1 +1,0 @@
-Implementieren Sie die Funktion f, die n als Parameter annimmt und eine Liste der Größe n zurückgibt, wobei der Wert des Elements an der Stelle i das Fakultät von i ist, wenn i gerade ist, oder die Summe der Zahlen von 1 bis i, wenn i ungerade ist. i beginnt bei 1. Das Fakultät von i ist das Produkt der Zahlen von 1 bis i (1 * 2 * ... * i).

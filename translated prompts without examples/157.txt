@@ -1,0 +1,4 @@
+
+def right_angle_triangle(a, b, c):
+    '''Gegeben sind die Längen der drei Seiten eines Dreiecks. Gib True zurück, wenn die drei Seiten ein rechtwinkliges Dreieck bilden, andernfalls False.
+Ein rechtwinkliges Dreieck ist ein Dreieck, in dem ein Winkel ein rechter Winkel oder 90 Grad ist.'''

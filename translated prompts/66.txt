@@ -1,1 +1,0 @@
-Schreiben Sie eine Funktion, die einen String als Eingabe erhält und die Summe der ASCII-Codes nur der Großbuchstaben zurückgibt.

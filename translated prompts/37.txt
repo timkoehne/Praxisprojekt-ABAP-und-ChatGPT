@@ -1,1 +1,0 @@
-Diese Funktion nimmt eine Liste l entgegen und gibt eine Liste l' zurück, bei der l' in den ungeraden Indizes identisch zu l ist, während die Werte in den geraden Indizes von l' den Werten der geraden Indizes von l entsprechen, jedoch sortiert sind.

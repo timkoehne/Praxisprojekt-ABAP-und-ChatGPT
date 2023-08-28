@@ -1,2 +1,0 @@
-Du hast ein Array arr von ganzen Zahlen und musst die Summe der Beträge der Zahlen zurückgeben, multipliziert mit dem Produkt aller Vorzeichen jeder Zahl im Array, dargestellt durch 1, -1 oder 0.
-Hinweis: Gib None zurück, wenn arr leer ist.

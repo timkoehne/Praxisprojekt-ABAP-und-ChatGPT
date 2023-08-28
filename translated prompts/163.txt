@@ -1,1 +1,0 @@
-Gegeben sind zwei positive ganze Zahlen a und b. Gib die geraden Ziffern zwischen a und b in aufsteigender Reihenfolge zurück.

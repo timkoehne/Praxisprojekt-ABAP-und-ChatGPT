@@ -1,1 +1,0 @@
-Bewerten Sie, ob die gegebene Zahl n als Summe von genau 4 positiven geraden Zahlen geschrieben werden kann.

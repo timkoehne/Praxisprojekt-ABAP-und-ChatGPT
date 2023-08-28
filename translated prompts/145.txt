@@ -1,4 +1,0 @@
-Schreiben Sie eine Funktion, die die gegebene Liste von Ganzzahlen
-in aufsteigender Reihenfolge nach der Summe ihrer Ziffern sortiert.
-Hinweis: Wenn es mehrere Elemente mit ähnlicher Summe ihrer Ziffern gibt,
-ordnen Sie sie basierend auf ihrem Index in der ursprünglichen Liste.

@@ -1,0 +1,4 @@
+
+
+def largest_divisor(n: int) -> int:
+    """Für eine gegebene Zahl n finden Sie die größte Zahl, die n gleichmäßig teilt und kleiner als n ist."""

@@ -1,8 +1,0 @@
-Dir wird ein rechteckiges Gitter von Brunnen gegeben. Jede Zeile repräsentiert einen einzelnen Brunnen und jede 1 in einer Zeile repräsentiert eine einzelne Einheit Wasser. Jeder Brunnen hat einen entsprechenden Eimer, der verwendet werden kann, um Wasser daraus zu entnehmen, und alle Eimer haben die gleiche Kapazität. Deine Aufgabe ist es, die Eimer zu verwenden, um die Brunnen zu leeren. Gib aus, wie oft du die Eimer senken musst.
-
-Einschränkungen:
-    * alle Brunnen haben die gleiche Länge
-    * 1 <= grid.length <= 10^2
-    * 1 <= grid[:,1].length <= 10^2
-    * grid[i][j] -> 0 | 1
-    * 1 <= Kapazität <= 10

@@ -1,4 +1,0 @@
-Gegeben ein Array von nicht-negativen ganzen Zahlen, gib eine Kopie des gegebenen Arrays zurück, nachdem es sortiert wurde. Wenn die Summe (Wert des ersten Index + Wert des letzten Index) ungerade ist, sortiere das Array in aufsteigender Reihenfolge. Wenn die Summe gerade ist, sortiere das Array in absteigender Reihenfolge.
-
-Hinweis:
-* Ändere das gegebene Array nicht.

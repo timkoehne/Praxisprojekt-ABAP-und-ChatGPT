@@ -1,1 +1,0 @@
-Gegeben eine ganze Zahl. Gib ein Tupel zurück, das die Anzahl der geraden und ungeraden Ziffern enthält.

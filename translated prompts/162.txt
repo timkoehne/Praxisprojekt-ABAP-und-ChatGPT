@@ -1,2 +1,0 @@
-Gegeben ist ein String 'text', gib seinen md5-Hash als String zurück.
-Wenn 'text' ein leerer String ist, gib None zurück.

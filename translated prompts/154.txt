@@ -1,1 +1,0 @@
-Du bekommst 2 Wörter. Du musst True zurückgeben, wenn das zweite Wort oder eine seiner Rotationen ein Teilstring im ersten Wort ist.

@@ -1,1 +1,0 @@
-Vervollständigen Sie die Funktion, die zwei Ganzzahlen annimmt und das Produkt ihrer Einerstellen zurückgibt. Nehmen Sie an, dass die Eingabe immer gültig ist.

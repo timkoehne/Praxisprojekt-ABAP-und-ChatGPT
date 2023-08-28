@@ -1,1 +1,0 @@
-Gib den größten Primfaktor von n zurück. Gehe davon aus, dass n > 1 und keine Primzahl ist.

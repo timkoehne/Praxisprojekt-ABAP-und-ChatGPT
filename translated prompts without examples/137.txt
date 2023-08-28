@@ -1,0 +1,3 @@
+
+def compare_one(a, b):
+    """Erstellen Sie eine Funktion, die Ganzzahlen, Fließkommazahlen oder Zeichenfolgen annimmt, die reelle Zahlen darstellen, und die größere Variable in ihrem gegebenen Variablentyp zurückgibt. Geben Sie None zurück, wenn die Werte gleich sind. Hinweis: Wenn eine reelle Zahl als Zeichenfolge dargestellt wird, kann der Dezimalpunkt . oder , sein."""

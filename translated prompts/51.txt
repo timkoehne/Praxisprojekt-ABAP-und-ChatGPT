@@ -1,1 +1,0 @@
-remove_vowels ist eine Funktion, die einen String entgegennimmt und einen String ohne Vokale zurückgibt.

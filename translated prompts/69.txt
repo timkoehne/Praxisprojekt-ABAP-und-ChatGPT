@@ -1,1 +1,0 @@
-Sie erhalten eine nicht-leere Liste von positiven Ganzzahlen. Geben Sie die größte Ganzzahl zurück, die größer als Null ist und eine Häufigkeit hat, die größer oder gleich dem Wert der Ganzzahl selbst ist. Die Häufigkeit einer Ganzzahl ist die Anzahl der Male, die sie in der Liste erscheint. Wenn kein solcher Wert existiert, geben Sie -1 zurück.

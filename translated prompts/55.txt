@@ -1,1 +1,0 @@
-Gib die n-te Fibonacci-Zahl zurück.

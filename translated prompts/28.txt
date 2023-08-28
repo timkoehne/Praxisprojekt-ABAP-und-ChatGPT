@@ -1,1 +1,0 @@
-Verkette eine Liste von Zeichenketten zu einer einzigen Zeichenkette.

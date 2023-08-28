@@ -5,6 +5,7 @@ saplogonLoginDetails.json
 saplogonLoginDetails - old.json
 saplogonLoginDetails - local.json
 tests/
+translated prompts/
 answer.txt
 translated prompts.json
 *.pyc
@@ -12,7 +13,7 @@ prompts nochmal angucken.txt
 probleme mit den übersetzungen.txt
 backup
 test.py
-randomSmallTest.json
+randomSmallTest*.json
 somePassablePrompts.json
 allPrompts5Repeats*.json
 bigRun-*
@@ -23,3 +24,4 @@ combinedThreads.json
 bigRun.json
 adjusting*.json
 test.json
+createNewTranslatedPrompts.py

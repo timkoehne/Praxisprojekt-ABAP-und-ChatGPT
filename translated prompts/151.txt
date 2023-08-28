@@ -1,1 +1,0 @@
-Gegeben eine Liste von Zahlen, gib die Summe der Quadrate der Zahlen in der Liste zurück, die ungerade sind. Ignoriere Zahlen, die negativ oder keine ganzen Zahlen sind.

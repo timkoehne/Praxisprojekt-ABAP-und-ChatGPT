@@ -1,7 +1,0 @@
-Gegeben eine positive ganze Zahl n, gib eine sortierte Liste zurück, die die ungeraden Zahlen in der Collatz-Folge enthält.
-
-Die Collatz-Vermutung ist eine Vermutung in der Mathematik, die sich auf eine Folge bezieht, die wie folgt definiert ist: Beginne mit einer beliebigen positiven ganzen Zahl n. Dann wird jeder Term aus dem vorherigen Term wie folgt erhalten: Wenn der vorherige Term gerade ist, ist der nächste Term die Hälfte des vorherigen Terms. Wenn der vorherige Term ungerade ist, ist der nächste Term 3 mal der vorherige Term plus 1. Die Vermutung besagt, dass unabhängig von dem Wert von n die Folge immer 1 erreichen wird.
-
-Hinweis:
-    1. Collatz(1) ist [1].
-    2. Die zurückgegebene Liste ist in aufsteigender Reihenfolge sortiert.

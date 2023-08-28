@@ -1,2 +1,0 @@
-Gegeben eine positive ganze Zahl n, gib das Produkt der ungeraden Ziffern zurück.
-Gib 0 zurück, wenn alle Ziffern gerade sind.

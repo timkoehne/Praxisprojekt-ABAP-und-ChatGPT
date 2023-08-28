@@ -1,1 +1,0 @@
-Gib eine Liste aller Präfixe des Eingabestrings zurück, sortiert nach Länge von kurz nach lang.

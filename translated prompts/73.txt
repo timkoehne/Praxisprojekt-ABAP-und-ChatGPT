@@ -1,1 +1,0 @@
-Gegeben sei ein Array arr von ganzen Zahlen. Finde die minimale Anzahl von Elementen, die geändert werden müssen, um das Array palindromisch zu machen. Ein palindromisches Array ist ein Array, das rückwärts und vorwärts gelesen gleich ist. In einer Änderung kannst du ein Element in ein anderes Element ändern.

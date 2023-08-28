@@ -1,5 +1,0 @@
-Du musst eine Funktion schreiben, die einen gegebenen Datumsstring validiert und True zurückgibt, wenn das Datum gültig ist, andernfalls False. Das Datum ist gültig, wenn alle folgenden Regeln erfüllt sind:
-1. Der Datumsstring ist nicht leer.
-2. Die Anzahl der Tage ist nicht weniger als 1 oder höher als 31 Tage für die Monate 1,3,5,7,8,10,12. Und die Anzahl der Tage ist nicht weniger als 1 oder höher als 30 Tage für die Monate 4,6,9,11. Und die Anzahl der Tage ist nicht weniger als 1 oder höher als 29 für den Monat 2.
-3. Die Monate sollten nicht weniger als 1 oder höher als 12 sein.
-4. Das Datum sollte im Format mm-dd-yyyy sein.

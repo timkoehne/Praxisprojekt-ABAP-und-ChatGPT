@@ -1,5 +1,0 @@
-Erstelle eine Funktion, die einen String annimmt, der den Namen einer Datei repräsentiert, und 'Ja' zurückgibt, wenn der Dateiname gültig ist, andernfalls 'Nein'. Ein Dateiname gilt nur dann als gültig, wenn alle folgenden Bedingungen erfüllt sind:
-- Es dürfen nicht mehr als drei Ziffern ('0'-'9') im Dateinamen enthalten sein.
-- Der Dateiname enthält genau einen Punkt '.'.
-- Der Teilstring vor dem Punkt darf nicht leer sein und beginnt mit einem Buchstaben aus dem lateinischen Alphabet ('a'-'z' und 'A'-'Z').
-- Der Teilstring nach dem Punkt muss einer der folgenden sein: ['txt', 'exe', 'dll'].

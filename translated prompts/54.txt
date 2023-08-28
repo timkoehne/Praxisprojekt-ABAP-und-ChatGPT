@@ -1,1 +1,0 @@
-Überprüfe, ob zwei Wörter dieselben Buchstaben haben.

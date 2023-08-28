@@ -1,1 +1,0 @@
-Gegeben sei ein Array von ganzen Zahlen nums. Finde die minimale Summe eines nicht-leeren Teil-Arrays von nums.

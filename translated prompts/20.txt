@@ -1,1 +1,0 @@
-Aus einer bereitgestellten Liste von Zahlen (mit einer Länge von mindestens zwei) wählen Sie zwei Zahlen aus, die einander am nächsten sind, und geben Sie sie in aufsteigender Reihenfolge zurück (kleinere Zahl, größere Zahl).

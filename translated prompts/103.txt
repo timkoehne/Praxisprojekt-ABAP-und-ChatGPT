@@ -1,1 +1,0 @@
-Dir werden zwei positive ganze Zahlen n und m gegeben und deine Aufgabe ist es, den Durchschnitt der Zahlen von n bis m (einschließlich n und m) zu berechnen. Runde die Antwort auf die nächste ganze Zahl und konvertiere sie in binäre Form. Wenn n größer als m ist, gib -1 zurück.

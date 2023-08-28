@@ -1,0 +1,6 @@
+
+
+def change_base(x: int, base: int):
+    """Ändere die numerische Basis der Eingangsnummer x in die Basis.
+Gib die Zeichenfolgen-Darstellung nach der Konvertierung zurück.
+Basiszahlen sind kleiner als 10."""

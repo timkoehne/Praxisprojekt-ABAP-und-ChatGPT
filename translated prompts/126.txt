@@ -1,1 +1,0 @@
-Gegeben eine Liste von Zahlen, gib zurück, ob sie in aufsteigender Reihenfolge sortiert sind. Wenn die Liste mehr als 1 Duplikat der gleichen Zahl enthält, gib False zurück. Gehe davon aus, dass es keine negativen Zahlen gibt und nur Ganzzahlen.

@@ -1,0 +1,5 @@
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """Die Eingabe für diese Funktion ist ein String, der mehrere Gruppen von verschachtelten Klammern enthält, die durch Leerzeichen getrennt sind. Für jede Gruppe soll die maximale Verschachtelungstiefe der Klammern ausgegeben werden. Zum Beispiel hat (()()) maximal zwei Ebenen der Verschachtelung, während ((())) drei hat."""

@@ -1,4 +1,0 @@
-Die Eingabe für diese Funktion ist ein String, der musikalische Noten in einem speziellen ASCII-Format darstellt. Deine Aufgabe ist es, diesen String zu analysieren und eine Liste von ganzen Zahlen zurückzugeben, die angeben, wie viele Schläge jede Note dauert. Hier ist eine Legende:
-    'o' - Ganze Note, dauert vier Schläge
-    'o|' - Halbe Note, dauert zwei Schläge
-    '.|' - Viertelnote, dauert einen Schlag

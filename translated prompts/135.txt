@@ -1,1 +1,0 @@
-Erstellen Sie eine Funktion, die den größten Index eines Elements zurückgibt, das nicht größer oder gleich dem unmittelbar vorhergehenden Element ist. Wenn kein solches Element vorhanden ist, geben Sie -1 zurück. Das gegebene Array enthält keine doppelten Werte.

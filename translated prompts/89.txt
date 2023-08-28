@@ -1,1 +1,0 @@
-Erstelle eine Funktion "encrypt", die einen String als Argument nimmt und einen verschlüsselten String zurückgibt, bei dem das Alphabet rotiert wird. Das Alphabet sollte so rotiert werden, dass die Buchstaben um zwei multipliziert mit zwei Stellen nach unten verschoben werden.

@@ -1,0 +1,3 @@
+
+def iscube(a):
+    '''Schreiben Sie eine Funktion, die eine ganze Zahl a entgegennimmt und True zurückgibt, wenn diese Zahl die Kubikzahl einer ganzen Zahl ist. Hinweis: Sie können davon ausgehen, dass die Eingabe immer gültig ist.'''

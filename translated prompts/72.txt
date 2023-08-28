@@ -1,1 +1,0 @@
-Schreiben Sie eine Funktion, die True zurückgibt, wenn das Objekt q fliegen wird, und False sonst. Das Objekt q wird fliegen, wenn es ausbalanciert ist (es ist eine palindromische Liste) und die Summe seiner Elemente kleiner oder gleich dem maximal möglichen Gewicht w ist.

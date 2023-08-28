@@ -1,3 +1,0 @@
-Gibt eine verschlüsselte Zeichenkette zurück, indem jeder Buchstabe im Alphabet um 5 verschoben wird.
-
-Nimmt als Eingabe eine mit der encode_shift-Funktion verschlüsselte Zeichenkette. Gibt die entschlüsselte Zeichenkette zurück.

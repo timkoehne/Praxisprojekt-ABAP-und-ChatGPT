@@ -1,1 +1,0 @@
-Filtere die gegebene Liste von Python-Werten nur für Ganzzahlen.

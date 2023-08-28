@@ -1,1 +1,0 @@
-Gib den Median der Elemente in der Liste l zurück.

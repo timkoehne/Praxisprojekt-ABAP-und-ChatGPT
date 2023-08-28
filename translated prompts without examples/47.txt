@@ -1,0 +1,4 @@
+
+
+def median(l: list):
+    """Gib den Median der Elemente in der Liste l zurück."""

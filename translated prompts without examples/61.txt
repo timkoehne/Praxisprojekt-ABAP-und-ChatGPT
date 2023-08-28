@@ -1,0 +1,4 @@
+
+
+def correct_bracketing(brackets: str):
+    """Gib True zurück, wenn jede öffnende Klammer eine entsprechende schließende Klammer hat."""

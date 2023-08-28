@@ -1,4 +1,0 @@
-Dir wird der Name einer Klasse (eine Zeichenkette) und eine Liste von Erweiterungen gegeben.
-Die Erweiterungen sollen verwendet werden, um zusätzliche Klassen zur Klasse zu laden. Die Stärke der Erweiterung ergibt sich wie folgt: Sei CAP die Anzahl der Großbuchstaben im Namen der Erweiterung und SM die Anzahl der Kleinbuchstaben im Namen der Erweiterung, die Stärke wird durch den Bruch CAP - SM gegeben. Du sollst die stärkste Erweiterung finden und eine Zeichenkette in diesem Format zurückgeben: ClassName.StrongestExtensionName.
-Wenn es zwei oder mehr Erweiterungen mit der gleichen Stärke gibt, solltest du die wählen, die als erstes in der Liste kommt.
-Wenn du zum Beispiel "Slices" als Klasse und eine Liste von Erweiterungen erhältst: ['SErviNGSliCes', 'Cheese', 'StuFfed'], solltest du 'Slices.SErviNGSliCes' zurückgeben, da 'SErviNGSliCes' die stärkste Erweiterung ist (ihre Stärke beträgt -1).

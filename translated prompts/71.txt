@@ -1,1 +1,0 @@
-Gegeben sind die Längen der drei Seiten eines Dreiecks. Gib die Fläche des Dreiecks auf 2 Dezimalstellen gerundet zurück, wenn die drei Seiten ein gültiges Dreieck bilden. Andernfalls gib -1 zurück. Drei Seiten bilden ein gültiges Dreieck, wenn die Summe von zwei Seiten größer ist als die dritte Seite.

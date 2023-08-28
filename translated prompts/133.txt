@@ -1,3 +1,0 @@
-Dir wird eine Liste von Zahlen gegeben.
-Du musst die Summe der quadrierten Zahlen in der Liste zurückgeben,
-runde jedes Element in der Liste zuerst auf die nächsthöhere Ganzzahl (Ceiling).

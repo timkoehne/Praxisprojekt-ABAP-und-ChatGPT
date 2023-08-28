@@ -1,1 +1,0 @@
-Gegeben ein Wörterbuch, gib True zurück, wenn alle Schlüssel Strings in Kleinbuchstaben oder alle Schlüssel Strings in Großbuchstaben sind, sonst gib False zurück. Die Funktion sollte False zurückgeben, wenn das gegebene Wörterbuch leer ist.

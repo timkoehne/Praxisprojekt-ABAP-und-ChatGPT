@@ -1,0 +1,5 @@
+
+def next_smallest(lst):
+    """Du hast eine Liste von ganzen Zahlen.
+Schreibe eine Funktion next_smallest(), die das zweitkleinste Element der Liste zurückgibt.
+Gib None zurück, wenn es kein solches Element gibt."""

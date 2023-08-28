@@ -1,3 +1,0 @@
-Deine Aufgabe ist es, eine Funktion zu implementieren, die den Ausdruck x * n vereinfacht. Die Funktion gibt True zurück, wenn x * n zu einer ganzen Zahl ausgewertet wird, andernfalls False. Sowohl x als auch n sind Zeichenketten, die eine Bruchzahl darstellen und das folgende Format haben: <Zähler>/<Nenner>, wobei sowohl Zähler als auch Nenner positive ganze Zahlen sind.
-
-Du kannst davon ausgehen, dass x und n gültige Bruchzahlen sind und keinen Nenner von Null haben.

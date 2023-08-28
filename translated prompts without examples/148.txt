@@ -1,0 +1,4 @@
+
+def bf(planet1, planet2):
+    '''Es gibt acht Planeten in unserem Sonnensystem: Der dem Sonnensystem am nächsten gelegene Planet ist Merkur, dann folgen Venus, die Erde, Mars, Jupiter, Saturn, Uranus und Neptun.
+Schreibe eine Funktion, die zwei Planetennamen als Strings planet1 und planet2 entgegennimmt. Die Funktion sollte ein Tupel zurückgeben, das alle Planeten enthält, deren Umlaufbahnen zwischen der Umlaufbahn von Planet1 und der Umlaufbahn von Planet2 liegen und nach Nähe zur Sonne sortiert sind. Die Funktion sollte ein leeres Tupel zurückgeben, wenn planet1 oder planet2 keine korrekten Planetennamen sind.'''

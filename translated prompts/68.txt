@@ -1,3 +1,0 @@
-Gegeben ist ein Array, das einen Ast eines Baumes darstellt und nicht-negative ganze Zahlenknoten enthält. Ihre Aufgabe ist es, einen der Knoten zu entfernen und zurückzugeben. Der entfernte Knoten sollte der Knoten mit dem kleinsten geraden Wert sein. Wenn mehrere Knoten mit dem gleichen kleinsten geraden Wert gefunden werden, geben Sie den Knoten zurück, der den kleinsten Index hat.
-
-Der entfernte Knoten sollte in einer Liste zurückgegeben werden, [kleinster Wert, sein Index]. Wenn es keine geraden Werte gibt oder das gegebene Array leer ist, geben Sie [] zurück.

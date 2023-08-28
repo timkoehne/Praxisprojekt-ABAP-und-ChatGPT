@@ -1,1 +1,0 @@
-Schreiben Sie eine Funktion, die ein Array von Zahlen als Eingabe erhält und die Anzahl der Elemente im Array zurückgibt, die größer als 10 sind und bei denen sowohl die erste als auch die letzte Ziffer der Zahl ungerade (1, 3, 5, 7, 9) sind.

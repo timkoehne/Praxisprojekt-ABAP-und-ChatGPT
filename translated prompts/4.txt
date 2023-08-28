@@ -1,1 +1,0 @@
-Für eine gegebene Liste von Eingabezahlen berechne die mittlere absolute Abweichung um den Mittelwert dieses Datensatzes. Die mittlere absolute Abweichung ist der durchschnittliche absolute Unterschied zwischen jedem Element und einem Mittelpunkt.

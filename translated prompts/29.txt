@@ -1,1 +1,0 @@
-Filtern Sie eine Eingabeliste von Zeichenketten nur für solche, die mit einem bestimmten Präfix beginnen.

@@ -1,1 +1,0 @@
-Schreibe eine Funktion "vowels_count", die einen String als Eingabe erhält, der ein Wort darstellt, und die Anzahl der Vokale im String zurückgibt. Vokale sind in diesem Fall 'a', 'e', 'i', 'o', 'u'. Hierbei ist 'y' auch ein Vokal, aber nur wenn es am Ende des gegebenen Wortes steht.

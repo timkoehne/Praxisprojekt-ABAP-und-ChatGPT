@@ -1,1 +1,0 @@
-Gib 2^n modulo p zurück (achte auf numerische Probleme).

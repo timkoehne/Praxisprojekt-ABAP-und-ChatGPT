@@ -1,5 +1,0 @@
-Du erhältst einen String s.
-Wenn s[i] ein Buchstabe ist, kehre seinen Fall von Klein- zu Großbuchstaben oder umgekehrt um,
-ansonsten belasse es wie es ist.
-Wenn der String keine Buchstaben enthält, kehre den String um.
-Die Funktion sollte den resultierenden String zurückgeben.

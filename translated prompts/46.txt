@@ -1,1 +1,0 @@
-Die Fib4-Zahlenfolge ist eine Folge ähnlich der Fibonacci-Folge, die wie folgt definiert ist:

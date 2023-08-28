@@ -1,1 +1,0 @@
-Implementieren Sie eine Funktion, die eine nicht-negative ganze Zahl entgegennimmt und ein Array der ersten n Primzahlen zurückgibt, die kleiner als n sind.

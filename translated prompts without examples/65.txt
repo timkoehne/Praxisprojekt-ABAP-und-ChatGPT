@@ -1,0 +1,3 @@
+
+def circular_shift(x, shift):
+    """Verschiebe die Ziffern der ganzen Zahl x zyklisch um shift Stellen nach rechts und gib das Ergebnis als Zeichenkette zurück."""

@@ -1,1 +1,0 @@
-Gegeben ist ein String, der aus Kleinbuchstaben besteht und durch Leerzeichen getrennt ist. Gib ein Wörterbuch zurück, das den Buchstaben mit den meisten Wiederholungen enthält und die entsprechende Anzahl angibt. Wenn mehrere Buchstaben die gleiche Anzahl von Vorkommen haben, gib alle zurück.

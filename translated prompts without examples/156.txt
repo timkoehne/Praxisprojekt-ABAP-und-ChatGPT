@@ -1,0 +1,4 @@
+
+def int_to_mini_roman(number):
+    """Gegeben eine positive ganze Zahl, erhalte ihre römische Numeral-Äquivalenz als Zeichenfolge und gib sie in Kleinbuchstaben zurück.
+Einschränkungen: 1 <= num <= 1000"""

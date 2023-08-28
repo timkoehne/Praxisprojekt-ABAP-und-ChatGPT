@@ -1,0 +1,3 @@
+
+def solve(N):
+    """Gegeben eine positive ganze Zahl N, gib die Gesamtsumme ihrer Ziffern in binärer Form zurück."""
