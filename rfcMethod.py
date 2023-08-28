@@ -1,6 +1,8 @@
 
+import importlib
 import json
 import more_itertools
+import pyrfc
 import threading
 import queue
 import time
@@ -202,3 +204,69 @@ def askChatGptForPromptsMultithreaded(savefilename: str, systemPrompts, promptOp
 
     with open(savefilename, "w") as file:
         file.write(json.dumps(saveDict, indent=4))
+
+def runSavedFunctions(loadfilename: str, savefilename: str):
+    if savefilename.endswith(".json"): savefilename = savefilename.removesuffix(".json")
+    with open(loadfilename) as file:
+        prompts = json.loads(file.read())
+    
+    with open("saplogonLoginDetails - local.json", "r") as file:
+        connection_params = json.loads(file.read())
+    
+    progressCounter = 0
+
+    for systemPromptIndex, systemPrompt in enumerate(prompts):
+        for tempIndex, temperature in enumerate(prompts[systemPrompt]):
+            for promptOptionIndex, promptOption in enumerate(prompts[systemPrompt][temperature]):
+                for promptNumber in prompts[systemPrompt][temperature][promptOption]:
+                    for attemptNr, attempt in enumerate(prompts[systemPrompt][temperature][promptOption][promptNumber]["attempts"]):
+                        currentAttempt = prompts[systemPrompt][temperature][promptOption][promptNumber]["attempts"][attemptNr]
+                        progressCounter += 1
+                        print("Progress: ", str(progressCounter), "/", str(len(prompts) *
+                                                                    len(prompts[systemPrompt]) *
+                                                                    len(prompts[systemPrompt][temperature]) *
+                                                                    len(prompts[systemPrompt][temperature][promptOption]) *
+                                                                    len(prompts[systemPrompt][temperature][promptOption][promptNumber]["attempts"])))
+                        if "functionname" not in currentAttempt:
+                            try:
+                                functionName, importParameters, exportParameters, programcode = extractAbapFunctionInformation(currentAttempt["chatgptResponse"])
+                            except Exception as e:
+                                functionName, importParameters, exportParameters, programcode = "defaultFunctionName", "", "", ""
+                                print(e)
+                            
+                            currentAttempt["functionname"] = functionName
+                            currentAttempt["importParameters"] = importParameters
+                            currentAttempt["exportParameters"] = exportParameters
+                            currentAttempt["programcode"] = programcode
+                            
+                            with pyrfc.Connection(**connection_params) as conn:
+                                functionCreated = pythonAbapInterface.createFunctionModule(conn, 
+                                                                        currentAttempt["functionname"],
+                                                                        currentAttempt["importParameters"],
+                                                                        currentAttempt["exportParameters"],
+                                                                        currentAttempt["programcode"])
+                                
+                                currentAttempt["functionCreated"] = functionCreated
+                                time.sleep(1)
+                                testModule = importlib.import_module("adjustedTests.test" + str(promptNumber))
+                                passed, failed = testModule.check(Test(conn, 
+                                                                        currentAttempt["functionname"],
+                                                                        currentAttempt["importParameters"],
+                                                                        currentAttempt["exportParameters"],
+                                                                        currentAttempt).callFunction)
+                                currentAttempt["passed"] = passed
+                                currentAttempt["failed"] = failed
+                                currentAttempt["tests"] = passed+failed
+                                print(f"Prompt {promptNumber} Attempt {attemptNr}: {passed} out of {passed+failed} unit-tests were successful")
+                                
+                            with pyrfc.Connection(**connection_params) as conn:
+                                pythonAbapInterface.deleteFunctionModule(conn, currentAttempt["functionname"])
+                            prompts[systemPrompt][str(temperature)][promptOption][str(promptNumber)]["attempts"][attemptNr] = currentAttempt
+                            
+                            
+                            if (progressCounter.__mod__(50) == 0):
+                                with open("backup/" + savefilename + " progress" + str(progressCounter) + ".json", "w") as file:
+                                    file.write(json.dumps(prompts, indent=4))
+                                
+    with open(savefilename + ".json", "w") as file:
+        file.write(json.dumps(prompts, indent=4))
