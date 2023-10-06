@@ -5,7 +5,6 @@ saplogonLoginDetails.json
 saplogonLoginDetails - old.json
 saplogonLoginDetails - local.json
 tests/
-translated prompts/
 answer.txt
 translated prompts.json
 *.pyc
@@ -16,7 +15,6 @@ test.py
 randomSmallTest*.json
 somePassablePrompts.json
 allPrompts5Repeats*.json
-bigRun-*
 newSmallTest*.json
 runTest.json
 somePassablePrompts*.json
@@ -25,3 +23,6 @@ bigRun.json
 adjusting*.json
 test.json
 createNewTranslatedPrompts.py
+testing/
+testing stuff.py
+generateFunction.py

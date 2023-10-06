@@ -1,0 +1,1 @@
+prime_fib gibt die n-te Zahl zurück, die sowohl eine Fibonacci-Zahl als auch eine Primzahl ist.

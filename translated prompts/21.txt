@@ -1,0 +1,1 @@
+Gegebene Liste von Zahlen (mit mindestens zwei Elementen), wende eine lineare Transformation auf diese Liste an, so dass die kleinste Zahl zu 0 und die größte zu 1 wird.

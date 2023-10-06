@@ -1,0 +1,3 @@
+Dir wird ein Wort gegeben. Deine Aufgabe ist es, den nächstgelegenen Vokal zu finden, der zwischen zwei Konsonanten auf der rechten Seite des Wortes steht (Groß- und Kleinschreibung beachten).
+Vokale am Anfang und Ende zählen nicht. Gib einen leeren String zurück, wenn du keinen Vokal gefunden hast, der der obigen Bedingung entspricht.
+Du kannst davon ausgehen, dass der gegebene String nur englische Buchstaben enthält.

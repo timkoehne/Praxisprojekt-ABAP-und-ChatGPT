@@ -1,0 +1,2 @@
+Gegebene Liste von Ganzzahlen, gib eine Liste in seltsamer Reihenfolge zurück.
+Eine seltsame Sortierung beginnt mit dem kleinsten Wert, dann dem Maximum der verbleibenden Ganzzahlen, dann dem Minimum und so weiter.

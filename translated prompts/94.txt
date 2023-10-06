@@ -1,0 +1,2 @@
+Dir wird eine Liste von ganzen Zahlen gegeben.
+Du musst den größten Primzahlwert finden und die Summe seiner Ziffern zurückgeben.

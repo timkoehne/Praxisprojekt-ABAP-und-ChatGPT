@@ -1,0 +1,34 @@
+This ABAP code defines a function called "z_right_angle_triangle." The purpose of this function is to determine whether a triangle with sides of lengths A, B, and C is a right-angle triangle or not. A right-angle triangle is a triangle where one of the angles is a 90-degree angle.
+
+Let's break down the code step by step:
+
+Function Interface:
+The function has three input parameters (IMPORTING):
+A: An integer value representing the length of side A of the triangle.
+B: An integer value representing the length of side B of the triangle.
+C: An integer value representing the length of side C of the triangle.
+It also has one output parameter (EXPORTING):
+
+RETURN_VALUE: A character field of length 1. It will store either 'X' if the triangle is a right-angle triangle or a blank (' ') if it is not.
+Local Variables:
+Three local variables are defined to store the squares of the side lengths:
+square_a: Holds the square of side A.
+square_b: Holds the square of side B.
+square_c: Holds the square of side C.
+Calculating Squares:
+The code calculates the squares of the side lengths by multiplying each side with itself and storing the results in the respective variables square_a, square_b, and square_c.
+
+Initializing RETURN_VALUE:
+The RETURN_VALUE is initialized with a blank (' ') before checking whether the triangle is a right-angle triangle or not.
+
+Checking for Right-Angle Triangle:
+The code then checks whether the triangle is a right-angle triangle using the Pythagorean theorem. According to the theorem, in a right-angle triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. So, the code checks for three conditions:
+
+square_a = square_b + square_c
+square_b = square_a + square_c
+square_c = square_a + square_b
+If any of these conditions is true, it means the triangle is a right-angle triangle, and the RETURN_VALUE is set to 'X'.
+
+End of Function:
+The function ends (ENDFUNCTION) after performing the check.
+When you call this function and pass the lengths of the three sides (A, B, and C) as input, it will return 'X' in the RETURN_VALUE if the triangle is a right-angle triangle or a blank if it is not.

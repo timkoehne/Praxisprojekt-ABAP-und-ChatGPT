@@ -1,0 +1,1 @@
+Gegeben sind die Länge einer Seite und die Höhe des zugehörigen Dreiecks.

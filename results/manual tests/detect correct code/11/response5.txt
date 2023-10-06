@@ -1,0 +1,44 @@
+Yes, there is a syntax error in the given code. In the CONCATENATE statements inside the loop, you should use lv_result instead of RV_RESULT, as the latter is the name of the exporting parameter, not the local variable that should be updated. Here's the corrected version of the code:
+
+abap
+
+FUNCTION Z_STRING_XOR.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IV_A) TYPE  STRING
+*"     VALUE(IV_B) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(RV_RESULT) TYPE  STRING
+*"----------------------------------------------------------------------
+
+  DATA: lv_result TYPE string.
+
+  DATA: lv_length_a TYPE i,
+        lv_length_b TYPE i,
+        lv_index TYPE i.
+
+  lv_length_a = strlen( iv_a ).
+  lv_length_b = strlen( iv_b ).
+
+  IF lv_length_a <> lv_length_b.
+    MESSAGE 'Both input strings must have the same length.' TYPE 'E'.
+    RETURN.
+  ENDIF.
+
+  lv_index = 0.
+
+  DO lv_length_a TIMES.
+    IF iv_a+lv_index(1) = iv_b+lv_index(1).
+      CONCATENATE lv_result '0' INTO lv_result.
+    ELSE.
+      CONCATENATE lv_result '1' INTO lv_result.
+    ENDIF.
+    lv_index = lv_index + 1.
+  ENDDO.
+
+  RV_RESULT = lv_result. " Update the exporting parameter
+
+ENDFUNCTION.
+
+In this corrected version, lv_result is used in the CONCATENATE statements and then assigned to RV_RESULT at the end of the function. This ensures that the result is correctly returned through the exporting parameter.

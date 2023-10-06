@@ -1,0 +1,1 @@
+Schreiben Sie eine Funktion, die eine Nachricht annimmt und sie auf eine Weise kodiert, dass sie den Fall aller Buchstaben vertauscht, alle Vokale in der Nachricht durch den Buchstaben ersetzt, der 2 Stellen weiter im englischen Alphabet erscheint. Nehmen Sie an, dass nur Buchstaben vorhanden sind.

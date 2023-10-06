@@ -1,0 +1,1 @@
+Gegeben eine Zeichenkette Text, ersetze alle Leerzeichen darin durch Unterstriche, und wenn eine Zeichenkette mehr als 2 aufeinanderfolgende Leerzeichen hat, ersetze dann alle aufeinanderfolgenden Leerzeichen durch einen Bindestrich.

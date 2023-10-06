@@ -1,0 +1,1 @@
+Für eine gegebene Liste von ganzen Zahlen, gib ein Tupel zurück, das aus der Summe und dem Produkt aller Zahlen in der Liste besteht. Eine leere Summe sollte gleich 0 sein und ein leeres Produkt sollte gleich 1 sein.

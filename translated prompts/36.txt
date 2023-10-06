@@ -1,0 +1,1 @@
+Gib die Anzahl der Male zurück, in denen die Ziffer 7 in ganzen Zahlen kleiner als n vorkommt, die durch 11 oder 13 teilbar sind.

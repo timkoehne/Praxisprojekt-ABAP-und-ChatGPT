@@ -1,0 +1,2 @@
+Schreiben Sie eine Funktion, die true zurückgibt, wenn die gegebene Zahl das Produkt von 3 Primzahlen ist, andernfalls false.
+    Dabei ist bekannt, dass (a) kleiner als 100 ist.

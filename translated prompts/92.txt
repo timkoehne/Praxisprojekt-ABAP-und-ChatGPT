@@ -1,0 +1,3 @@
+Erstelle eine Funktion, die 3 Zahlen annimmt.
+Gibt true zurück, wenn eine der Zahlen gleich der Summe der anderen beiden ist und alle Zahlen Ganzzahlen sind.
+Gibt in allen anderen Fällen false zurück.

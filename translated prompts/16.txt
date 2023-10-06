@@ -1,0 +1,1 @@
+Gegeben eine Zeichenkette, finde heraus, aus wie vielen verschiedenen Zeichen (unabhängig von Groß- und Kleinschreibung) sie besteht.

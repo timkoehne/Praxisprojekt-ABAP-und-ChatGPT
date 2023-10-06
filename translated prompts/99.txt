@@ -1,0 +1,4 @@
+Erstellen Sie eine Funktion, die einen Wert (String) annimmt, der eine Zahl darstellt, und die nächste ganze Zahl zurückgibt. Wenn die Zahl gleich weit von zwei ganzen Zahlen entfernt ist, runden Sie sie weg von Null.
+
+Hinweis:
+Das Runden weg von Null bedeutet, dass wenn die gegebene Zahl gleich weit von zwei ganzen Zahlen entfernt ist, diejenige, die zurückgegeben werden sollte, diejenige ist, die am weitesten von Null entfernt ist. Zum Beispiel sollte closest_integer("14.5") 15 zurückgeben und closest_integer("-14.5") sollte -15 zurückgeben.

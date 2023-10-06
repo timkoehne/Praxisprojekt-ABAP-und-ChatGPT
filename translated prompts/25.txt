@@ -1,0 +1,1 @@
+Gib eine Liste der Primfaktoren der gegebenen ganzen Zahl in aufsteigender Reihenfolge zurück. Jeder der Faktoren sollte entsprechend der Anzahl seiner Auftritte in der Faktorisierung aufgelistet werden. Die Eingabezahl sollte gleich dem Produkt aller Faktoren sein.

@@ -1,0 +1,1 @@
+Finde heraus, wie oft eine bestimmte Teilzeichenkette im Originalstring vorkommt. Zähle dabei auch überlappende Fälle.

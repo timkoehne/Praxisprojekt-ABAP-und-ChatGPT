@@ -1,0 +1,49 @@
+The mistake in this code is that the exported result (RV_RESULT) is not being set correctly. The CONCATENATE statement is used to concatenate two strings together and store the result in RV_RESULT. However, in each iteration of the DO loop, the new value is concatenated with the existing value of RV_RESULT, which will not give the correct XOR result.
+
+To fix the code, you should initialize RV_RESULT to an empty string before entering the loop. You can achieve this by adding the line CLEAR RV_RESULT before the DO loop.
+
+Here's the corrected code:
+
+abap
+
+FUNCTION Z_STRING_XOR.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IV_A) TYPE  STRING
+*"     VALUE(IV_B) TYPE  STRING
+*"  EXPORTING
+*"     VALUE(RV_RESULT) TYPE  STRING
+*"----------------------------------------------------------------------
+
+  DATA: lv_result TYPE string.
+
+  DATA: lv_length_a TYPE i,
+        lv_length_b TYPE i,
+        lv_index TYPE i.
+
+  lv_length_a = strlen( iv_a ).
+  lv_length_b = strlen( iv_b ).
+
+  IF lv_length_a <> lv_length_b.
+    MESSAGE 'Both input strings must have the same length.' TYPE 'E'.
+    RETURN.
+  ENDIF.
+
+  lv_index = 0.
+  CLEAR rv_result.
+
+  DO lv_length_a TIMES.
+    IF iv_a+lv_index(1) = iv_b+lv_index(1).
+      CONCATENATE rv_result '0' INTO rv_result.
+    ELSE.
+      CONCATENATE rv_result '1' INTO rv_result.
+    ENDIF.
+    lv_index = lv_index + 1.
+  ENDDO.
+
+  RV_RESULT = lv_result.
+
+ENDFUNCTION.
+
+With this correction, the RV_RESULT will correctly store the result of the XOR operation between the two input strings IV_A and IV_B.

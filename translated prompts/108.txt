@@ -1,0 +1,1 @@
+Schreiben Sie eine Funktion count_nums, die ein Array von Ganzzahlen annimmt und die Anzahl der Elemente zurückgibt, die eine Summe der Ziffern > 0 haben. Wenn eine Zahl negativ ist, wird ihre erste Vorzeigeziffer negativ sein: z.B. -123 hat Vorzeigeziffern -1, 2 und 3.

@@ -1,0 +1,1 @@
+Gegeben eine Liste von Zeichenketten, wobei jede Zeichenkette nur aus Ziffern besteht, soll eine Liste zurückgegeben werden. Jedes Element i der Ausgabe sollte "die Anzahl der ungeraden Elemente in der Zeichenkette i der Eingabe" sein, wobei alle i durch die Anzahl der ungeraden Ziffern in der i-ten Zeichenkette der Eingabe ersetzt werden sollen.

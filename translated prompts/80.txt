@@ -1,0 +1,3 @@
+Du hast einen String s erhalten.
+Deine Aufgabe ist es zu überprüfen, ob der String glücklich ist oder nicht.
+Ein String ist glücklich, wenn er mindestens 3 Zeichen lang ist und jede Gruppe von 3 aufeinanderfolgenden Buchstaben unterschiedlich ist.

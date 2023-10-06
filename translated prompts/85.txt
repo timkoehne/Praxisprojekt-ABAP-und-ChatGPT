@@ -1,0 +1,1 @@
+Gegeben sei eine nicht-leere Liste von ganzen Zahlen lst. Addiere die geraden Elemente, die sich an ungeraden Indizes befinden.

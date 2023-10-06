@@ -1,0 +1,1 @@
+Diese Funktion nimmt zwei positive Zahlen x und y entgegen und gibt die größte gerade Zahl zurück, die im Bereich [x, y] enthalten ist. Falls es keine solche Zahl gibt, sollte die Funktion -1 zurückgeben.

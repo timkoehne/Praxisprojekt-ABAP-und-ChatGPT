@@ -1,0 +1,1 @@
+Fügen Sie einen Zahlen-Trennzeichen zwischen jedes aufeinanderfolgende Element der Eingabeliste "numbers" ein.

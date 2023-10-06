@@ -1,0 +1,22 @@
+This ABAP function is named "z_right_angle_triangle" and is designed to determine if a triangle is a right-angled triangle or not. In a right-angled triangle, the square of the length of one side is equal to the sum of the squares of the other two sides. This function takes three integer input parameters (A, B, and C) representing the lengths of the sides of a triangle and returns a single character (RETURN_VALUE) indicating if the triangle is a right-angled triangle or not.
+
+Here's a breakdown of the code:
+
+The function is defined with the name "z_right_angle_triangle." The function has an interface section specifying three input parameters (A, B, and C) and one output parameter (RETURN_VALUE).
+
+Inside the function, three local variables square_a, square_b, and square_c are declared. These variables will store the squares of the input parameters A, B, and C, respectively.
+
+The squares of the input parameters A, B, and C are calculated and stored in the corresponding variables square_a, square_b, and square_c.
+
+The variable "return_value" is initialized with a space character (' '). This is the default value if none of the conditions in the subsequent IF statement are met.
+
+The IF statement checks three conditions to determine if the triangle is a right-angled triangle or not. It checks if any of the three conditions is true:
+
+square_a = square_b + square_c
+square_b = square_a + square_c
+square_c = square_a + square_b
+If any of these conditions is true, it means that the triangle satisfies the Pythagorean theorem and is a right-angled triangle. In this case, the variable "return_value" is set to 'X'.
+
+The function ends with the "ENDFUNCTION." statement.
+
+In summary, this ABAP function calculates the squares of the input parameters representing the sides of a triangle and then checks if the triangle is a right-angled triangle using the Pythagorean theorem. If it is a right-angled triangle, the function sets the RETURN_VALUE to 'X'; otherwise, it remains as ' '.

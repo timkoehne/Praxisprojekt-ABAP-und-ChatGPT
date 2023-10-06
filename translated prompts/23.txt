@@ -1,0 +1,1 @@
+Gib die Länge des gegebenen Strings zurück.

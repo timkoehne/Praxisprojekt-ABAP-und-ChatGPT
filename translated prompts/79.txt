@@ -1,0 +1,3 @@
+Dir wird eine Zahl im Dezimalformat gegeben und deine Aufgabe ist es, sie in das Binärformat umzuwandeln. Die Funktion sollte einen String zurückgeben, wobei jedes Zeichen eine binäre Zahl darstellt. Jedes Zeichen im String wird entweder '0' oder '1' sein.
+
+Am Anfang und Ende des Strings wird es ein paar zusätzliche Zeichen 'db' geben. Die zusätzlichen Zeichen dienen der Formatierung.

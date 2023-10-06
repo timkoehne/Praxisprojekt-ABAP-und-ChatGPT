@@ -1,0 +1,6 @@
+Jeder kennt die Fibonacci-Folge, die in den letzten Jahrhunderten von Mathematikern intensiv untersucht wurde. Was die meisten Menschen jedoch nicht wissen, ist die Tribonacci-Folge. Die Tribonacci-Folge wird durch die Rekursion definiert: 
+tri(1) = 3 
+tri(n) = 1 + n / 2, wenn n gerade ist. 
+tri(n) = tri(n - 1) + tri(n - 2) + tri(n + 1), wenn n ungerade ist. 
+
+Sie erhalten eine nicht-negative ganze Zahl n. Sie müssen eine Liste der ersten n + 1 Zahlen der Tribonacci-Folge zurückgeben.

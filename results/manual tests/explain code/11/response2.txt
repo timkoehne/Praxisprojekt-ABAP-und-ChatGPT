@@ -1,0 +1,27 @@
+This ABAP code defines a function called "Z_STRING_XOR" that calculates the bitwise XOR (exclusive OR) operation between two input strings and stores the result in the exporting parameter "RV_RESULT." The XOR operation is performed bit by bit on corresponding characters of the two input strings, and the result is represented as a new string of '0' and '1' characters.
+
+Let's break down the code and explain each part:
+
+The code defines a function called "Z_STRING_XOR" with two importing parameters "IV_A" and "IV_B" of type STRING. These parameters are used to pass the two input strings that will undergo the XOR operation. It also has one exporting parameter "RV_RESULT" of type STRING, which will store the result of the XOR operation.
+
+The code declares some local variables:
+
+"lv_result" (of type STRING): It will hold the result of the XOR operation.
+"lv_length_a" and "lv_length_b" (both of type I - integer): These variables will store the lengths of the input strings "IV_A" and "IV_B," respectively.
+"lv_index" (of type I - integer): This variable will be used as an index during the iteration over the input strings.
+The code calculates the lengths of the input strings using the "strlen" function and stores them in "lv_length_a" and "lv_length_b."
+
+Next, the code checks if the lengths of the input strings are equal. If they are not equal, it displays an error message using the "MESSAGE" statement and returns from the function.
+
+The code initializes "lv_index" to 0.
+
+A DO loop is used to iterate "lv_length_a" times. This loop will go through each character of the input strings to perform the XOR operation.
+
+Within the DO loop:
+
+The code uses the "CONCATENATE" statement to append either '0' or '1' to the "RV_RESULT" based on the result of the XOR operation for the corresponding characters at the current index (lv_index) in "IV_A" and "IV_B".
+The XOR operation is performed by comparing the characters at the current index of "IV_A" and "IV_B." If the characters are the same, the result will be '0'; otherwise, it will be '1'.
+The "lv_index" is incremented by 1 in each iteration to move to the next character of the input strings.
+Once the DO loop completes, the result of the XOR operation is stored in "RV_RESULT," which is then passed back to the calling program.
+
+To summarize, this ABAP function "Z_STRING_XOR" takes two input strings ("IV_A" and "IV_B"), performs the bitwise XOR operation on corresponding characters, and returns the result as a new string in the exporting parameter "RV_RESULT." It's important to note that both input strings must have the same length for the XOR operation to be valid, as indicated by the length check in the code.

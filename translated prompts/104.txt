@@ -1,0 +1,3 @@
+Gegeben ist eine Liste von positiven ganzen Zahlen x. Gib eine sortierte Liste aller Elemente zurück, die keine gerade Ziffer enthalten.
+
+Hinweis: Die zurückgegebene Liste sollte in aufsteigender Reihenfolge sortiert sein.
